@@ -3,8 +3,8 @@ public class DoubleLinkedList<T> implements DoubleLinkedListInterface<T> {
     private ListNode<T> head;
 
     DoubleLinkedList() {
-        head = null;
         size = 0;
+        head = null;
     }
 
     public boolean IsEmpty() {
@@ -71,7 +71,7 @@ public class DoubleLinkedList<T> implements DoubleLinkedListInterface<T> {
         } else if (Valid(position)) {
             ListNode removeNode = GetNodeAt(position);
             removeNode.GetPrevious().SetNext(removeNode.GetNext());
-            removeNode.GetNext().SetPrevious(removeNode.GetPrevious().GetPrevious());
+            removeNode.GetNext().SetPrevious(removeNode.GetPrevious());
             size--;
         }
     }
