@@ -10,7 +10,7 @@ public class ListNode<T> {
     }
 
     ListNode(T item) {
-        SetItem(item);
+        this(item,null);
     }
 
     public void SetItem(T item){
